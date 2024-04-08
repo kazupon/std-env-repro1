@@ -1,0 +1,24 @@
+{
+  "name": "std-env-repro1",
+  "private": true,
+  "scripts": {
+    "build": "unbuild"
+  },
+  "exports": {
+    "./ci": {
+      "import": "./dist/ci.mjs",
+      "require": "./dist/ci.cjs",
+      "types": "./dist/ci.d.ts"
+    },
+    "./windows": {
+      "import": "./dist/windows.mjs",
+      "require": "./dist/windows.cjs",
+      "types": "./dist/windows.d.ts"
+    }
+  },
+  "devDependencies": {
+    "std-env": "^3.7.0",
+    "typescript": "^5.4.3",
+    "unbuild": "^2.0.0"
+  }
+}
